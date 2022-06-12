@@ -27,7 +27,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'dockerseenu'
-    repository: '123seenu / azuredevops'
+    repository: $(Repository)
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
 
